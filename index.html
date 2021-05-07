@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/_script.js"></script>
+    <script src="js/_script02.js"></script>
+    <link rel="stylesheet" href="css/_style.css">
+  </head>
+  <body id="esse" style="background-color: rgb(247, 249, 250);">
+    <div class="container-fluid">
+      <div class="jumbotron" style="height: 195px;">
+        <h1 class="display-8"><b>M</b>obiliaria do <b>B</b>aiano</h1>
+        <p class="lead">Esse é o site onde você poderá buscar por apartamentos nos Estados unidos pra alugar, vender o que você precisar.</p>
+        <hr class="my-2">
+      </div>
+      <div class="row">
+        <div class="container-fluid">        
+          <form>
+            <div class="form-row">
+              <!--Campos de filtragem-->
+              <div class="col-2">
+                <label for="state" >Estado</label>
+                <select class="custom-select" id="state" class="form-control">
+                  <option value="1">Escolha...</option>
+                  <option value="2" selected>Nova York</option>
+                  <option value="2">Manhattan</option>
+                  <option value="3">New York Mills</option>
+                </select>
+                <small class="form-text text-muted">Obrigatório.</small>
+              </div>
+              <div class="col-2">
+                <label for="state_code" >Código do Estado</label>
+                <select class="custom-select" id="state_code" class="form-control">
+                  <option value="1">Escolha...</option>
+                  <option selected>NY</option>
+                  <option value="3">MN</option>
+                </select>
+                <small class="form-text text-muted">Obrigatório.</small>
+              </div>
+              <div class="col-1">
+                <label for="limit" >Limite de Busca</label>
+                <input id="limit" class="form-control" type="text" placeholder="Ex: 10" value="20">
+                <small class="form-text text-muted">Obrigatório.</small>
+                <br>
+              </div>
+              <div class="col-1">
+                <label for="beds_min" >Quartos</label>
+                <input id="beds_min" class="form-control" type="text" placeholder="Ex: 1" disabled>
+                <small class="form-text text-muted">Opcional.</small>
+                <br>
+              </div>
+              <div class="col-2">
+                <label for="preco_maximo" >Preço Máximo</label>
+                <input id="preco_maximo" class="form-control" type="text" placeholder="Ex: 4645">
+                <small class="form-text text-muted">Opcional.</small>
+                <br>
+              </div>
+              <div class="col-1">
+                <label for="permite_gato" >Gatos?</label>
+                <select class="custom-select" id="permite_gato" class="form-control">
+                  <option selected></option>
+                  <option value="1">Sim</option>
+                  <option value="3">Não</option>
+                </select>
+                <small class="form-text text-muted">Opcional.</small>
+                <br>
+              </div>
+              <div class="col-1">
+                <label for="beds_min" >Banheiros</label>
+                <input id="beds_min" class="form-control" type="text" placeholder="Ex: 2">
+                <small class="form-text text-muted">Opcional.</small>
+                <br>
+              </div>
+              <div class="col-1">
+                <label for="beds_min" >Cachorros?</label>
+                <select class="custom-select" id="permite_cachorro" class="form-control">
+                  <option selected></option>
+                  <option value="1">Sim</option>
+                  <option value="3">Não</option>
+                </select>
+                <small class="form-text text-muted">Opcional.</small>
+                <br>
+              </div>
+              <div class="col-1 d-flex justify-content-end flex-column">
+                <label> </label>
+                <button class="btn btn-outline-success" onclick="ChamarSale()">Buscar</button>
+                <!--Só assim funciona :)-->
+                <label> </label>
+                <label> </label>
+                <label> </label>
+                <label> </label>
+                <label> </label>
+                <label> </label>
+                <!--Só assim funciona :)-->
+              </div>
+            </div>
+          </form>
+      </div>
+      </div>
+    </div>
+
+  </body>
+    <footer class="bg-light text-center text-lg-start fixed-bottom">
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 Copyright:
+        <a class="text-dark" href="#" oncClick="ChamarSale()">Daniel A.</a>
+      </div>
+      <!-- Copyright -->
+  </footer>
