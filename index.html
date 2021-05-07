@@ -2,6 +2,7 @@
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
+    <title>Mobiliaria</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -17,11 +18,11 @@
         <hr class="my-2">
       </div>
       <div class="row">
-        <div class="container-fluid">        
+        <div class="container d-flex justify-content-center">        
           <form>
             <div class="form-row">
               <!--Campos de filtragem-->
-              <div class="col-2">
+              <div class="col-4">
                 <label for="state" >Estado</label>
                 <select class="custom-select" id="state" class="form-control">
                   <option value="1">Escolha...</option>
@@ -31,7 +32,7 @@
                 </select>
                 <small class="form-text text-muted">Obrigatório.</small>
               </div>
-              <div class="col-2">
+              <div class="col-3">
                 <label for="state_code" >Código do Estado</label>
                 <select class="custom-select" id="state_code" class="form-control">
                   <option value="1">Escolha...</option>
@@ -40,51 +41,14 @@
                 </select>
                 <small class="form-text text-muted">Obrigatório.</small>
               </div>
-              <div class="col-1">
+              <div class="col-3">
                 <label for="limit" >Limite de Busca</label>
                 <input id="limit" class="form-control" type="text" placeholder="Ex: 10" value="20">
                 <small class="form-text text-muted">Obrigatório.</small>
                 <br>
               </div>
-              <div class="col-1">
-                <label for="beds_min" >Quartos</label>
-                <input id="beds_min" class="form-control" type="text" placeholder="Ex: 1" disabled>
-                <small class="form-text text-muted">Opcional.</small>
-                <br>
-              </div>
-              <div class="col-2">
-                <label for="preco_maximo" >Preço Máximo</label>
-                <input id="preco_maximo" class="form-control" type="text" placeholder="Ex: 4645">
-                <small class="form-text text-muted">Opcional.</small>
-                <br>
-              </div>
-              <div class="col-1">
-                <label for="permite_gato" >Gatos?</label>
-                <select class="custom-select" id="permite_gato" class="form-control">
-                  <option selected></option>
-                  <option value="1">Sim</option>
-                  <option value="3">Não</option>
-                </select>
-                <small class="form-text text-muted">Opcional.</small>
-                <br>
-              </div>
-              <div class="col-1">
-                <label for="beds_min" >Banheiros</label>
-                <input id="beds_min" class="form-control" type="text" placeholder="Ex: 2">
-                <small class="form-text text-muted">Opcional.</small>
-                <br>
-              </div>
-              <div class="col-1">
-                <label for="beds_min" >Cachorros?</label>
-                <select class="custom-select" id="permite_cachorro" class="form-control">
-                  <option selected></option>
-                  <option value="1">Sim</option>
-                  <option value="3">Não</option>
-                </select>
-                <small class="form-text text-muted">Opcional.</small>
-                <br>
-              </div>
-              <div class="col-1 d-flex justify-content-end flex-column">
+              
+              <div class="col-2 d-flex justify-content-end flex-column">
                 <label> </label>
                 <button class="btn btn-outline-success" onclick="ChamarSale()">Buscar</button>
                 <!--Só assim funciona :)-->

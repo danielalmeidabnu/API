@@ -105,18 +105,18 @@ var Osdados;
 				"x-rapidapi-host": "realtor.p.rapidapi.com"
 			},
 			beforeSend: function(){
-				$('#esse').after('<p class="loading">Espera papai</p>');
+				alert('Carregando...')
 			},
 			error: function(){
-				$('#esse').after('<p class="loading">Falha ao carregar</p>');
+				alert('Falha ao carregar as informações')
 			},
 			success: function(dados){
 				Osdados = dados;
-				alert('Achei');
+				alert('Achei Apartamentos para Venda');
 				//mostrarDadoSale(dados);
 			},
 			complete: function(){
-				$('.loading').remove();               
+				               
 			}
 		})
 }

@@ -16,7 +16,7 @@ function mostrarDadoSale(dados){
 								   <br>
 								   <br>
 								   <br>
-								   <h5 class="card-text2"><b>R$${el.price}.</b></h5>
+								   <h5 class="card-text2"><b>US$${el.price}.</b></h5>
 								   <div class="float-right">
 								   <a type="button" class="btn btn-info" href="${el.rdc_web_url}">Ver Mais</a>
 								   </div>							 	
